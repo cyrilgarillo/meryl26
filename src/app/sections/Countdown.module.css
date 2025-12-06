@@ -1,0 +1,37 @@
+/* src/sections/Countdown.module.css */
+
+.wrapper {
+  background: radial-gradient(
+    circle at top,
+    rgba(66, 194, 255, 0.2),
+    transparent 55%
+  );
+}
+
+.counterRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 30px;
+}
+
+.box {
+  width: 120px;
+  padding: 18px 10px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 2px;
+}

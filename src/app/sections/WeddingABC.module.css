@@ -1,0 +1,20 @@
+/* src/sections/WeddingABC.module.css */
+
+.wrapper {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 182, 193, 0.18),
+    rgba(255, 255, 255, 0.95)
+  );
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+}
+
+.footerNote {
+  text-align: center;
+}

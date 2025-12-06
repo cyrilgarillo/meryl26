@@ -1,0 +1,35 @@
+/* src/sections/RSVP.module.css */
+
+.form {
+  margin-top: 30px;
+}
+
+.label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+
+.input {
+  border-radius: 0;
+}
+
+.textarea {
+  border-radius: 0;
+  resize: vertical;
+}
+
+.radioGroup {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radioItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}

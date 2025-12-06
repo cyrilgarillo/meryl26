@@ -1,42 +1,80 @@
+/* src/app/globals.css */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-main: #fffaf5;
+  --bg-section-alt: #ffffff;
+  --text-main: #333333;
+  --accent: #ffb6c1; /* soft rosa */
+  --accent-strong: #ff7f9f;
+  --accent-blue: #42c2ff; /* Meer */
+  --accent-sand: #f3d6a6;
+  --font-display: "Courier New", Courier, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: var(--text-main);
+  background: var(--bg-main);
 }
 
 a {
-  color: inherit;
+  color: var(--accent-strong);
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-light {
+  background: var(--bg-section-alt);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+/* Buttons allgemein */
+.btn-wedding {
+  background: var(--accent-strong);
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.btn-wedding:hover {
+  background: var(--accent);
+  color: #333;
+}
+
+/* Für den One-Pager Abstand unter der Navbar */
+.page-offset {
+  padding-top: 80px;
 }

@@ -1,0 +1,17 @@
+/* src/sections/Accommodation.module.css */
+
+.wrapper {
+  background: #ffffff;
+}
+
+.card {
+  background: var(--bg-main);
+  padding: 20px 22px;
+  border-radius: 18px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+}
+
+.heading {
+  font-family: var(--font-display);
+  margin-bottom: 10px;
+}

@@ -1,0 +1,46 @@
+/* src/sections/About.module.css */
+
+.wrapper {
+  background: linear-gradient(
+    135deg,
+    var(--accent-sand),
+    rgba(255, 255, 255, 0.9)
+  );
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: 3rem;
+}
+
+.date {
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.names {
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+}
+
+.text {
+  margin-top: 1rem;
+  max-width: 480px;
+}
+
+.photoWrapper {
+  position: relative;
+  width: 330px;
+  height: 330px;
+  margin: 0 auto;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 8px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+.photo {
+  object-fit: cover;
+}

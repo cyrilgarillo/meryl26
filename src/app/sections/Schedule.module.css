@@ -1,0 +1,19 @@
+/* src/sections/Schedule.module.css */
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+.day {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+}
+
+.dayTitle {
+  font-family: var(--font-display);
+  margin-bottom: 6px;
+}

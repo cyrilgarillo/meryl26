@@ -1,0 +1,33 @@
+/* src/components/Navbar.module.css */
+
+.navbar {
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.navbarTop {
+  background: transparent;
+}
+
+.navbarScrolled {
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+}
+
+.navLink {
+  font-size: 0.95rem;
+  margin-left: 0.5rem;
+}
+
+/* Toggler sichtbarer machen */
+.toggler {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbarScrolled .toggler {
+  border-color: rgba(0, 0, 0, 0.3);
+}

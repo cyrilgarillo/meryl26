@@ -8,7 +8,7 @@
   --accent-strong: #ff7f9f;
   --accent-blue: #42c2ff; /* Meer */
   --accent-sand: #f3d6a6;
-  --font-display: "Courier New", Courier, monospace;
+  --font-display: "Georgia", "Times New Roman", serif;
 }
 
 *,
@@ -74,7 +74,8 @@ a:hover {
   color: #333;
 }
 
-/* Für den One-Pager Abstand unter der Navbar */
+/* Für den One-Pager Abstand unter der Navbar
+   (gilt für alle Sections nach dem Hero) */
 .page-offset {
-  padding-top: 80px;
+  padding-top: 72px; /* ungefähre Navbar-Höhe */
 }

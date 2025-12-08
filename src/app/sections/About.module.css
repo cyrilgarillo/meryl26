@@ -1,46 +1,100 @@
 /* src/sections/About.module.css */
 
-.wrapper {
+.hero {
+  position: relative;
+  min-height: 100vh; /* komplette Höhe */
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  color: #ffffff;
+  background-image: url("/images/hero-wedding.jpg"); /* Bild-Pfad anpassen */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
   background: linear-gradient(
-    135deg,
-    var(--accent-sand),
-    rgba(255, 255, 255, 0.9)
-  );
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.55)
+    );
+  z-index: 1;
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contentInner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 120px 15px 80px; /* oben Platz für Navbar */
+}
+
+.smallTop {
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
 }
 
 .heading {
   font-family: var(--font-display);
-  font-size: 3rem;
+  font-size: clamp(2.8rem, 4vw, 3.8rem);
+  margin-bottom: 6px;
 }
 
-.date {
+.subheading {
   font-size: 1.2rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-top: 0.5rem;
-}
-
-.names {
-  font-size: 1.8rem;
-  margin-top: 0.3rem;
+  margin-bottom: 18px;
 }
 
 .text {
-  margin-top: 1rem;
-  max-width: 480px;
-}
-
-.photoWrapper {
-  position: relative;
-  width: 330px;
-  height: 330px;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 520px;
   margin: 0 auto;
-  border-radius: 999px;
-  overflow: hidden;
-  border: 8px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
 }
 
-.photo {
-  object-fit: cover;
+.buttons {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.mainButton {
+  font-size: 1rem;
+}
+
+.secondaryLink {
+  font-size: 0.95rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.secondaryLink:hover {
+  text-decoration: underline;
+}
+
+/* etwas mehr Platz auf breiten Screens */
+@media (min-width: 992px) {
+  .contentInner {
+    padding-top: 140px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
 }

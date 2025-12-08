@@ -6,7 +6,7 @@ import styles from "./Navbar.module.css";
 import { useState, useEffect } from "react";
 
 const sections = [
-  { id: "about", label: "About" },
+  { id: "about", label: "Home" },
   { id: "countdown", label: "Countdown" },
   { id: "story", label: "Unsere Geschichte" },
   { id: "destination", label: "Destination & Location" },
@@ -21,23 +21,25 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 20);
+    const handler = () => setScrolled(window.scrollY > 30);
     window.addEventListener("scroll", handler);
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
+  const navModeClass = scrolled ? "navbar-light" : "navbar-dark";
+
   return (
     <nav
-      className={`navbar navbar-expand-lg fixed-top ${
+      className={`navbar navbar-expand-lg fixed-top ${navModeClass} ${
         styles.navbar
-      } ${scrolled ? styles.navbarScrolled : ""}`}
+      } ${scrolled ? styles.navbarScrolled : styles.navbarTop}`}
     >
       <div className="container">
         <Link href="#about" className={`navbar-brand ${styles.brand}`}>
           Melanie &amp; Cyril
         </Link>
         <button
-          className="navbar-toggler"
+          className={`navbar-toggler ${styles.toggler}`}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#weddingNavbar"

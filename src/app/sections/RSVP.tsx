@@ -1,4 +1,3 @@
-// src/sections/RSVP.tsx
 "use client";
 
 import { FormEvent, useState } from "react";
@@ -9,7 +8,6 @@ export default function RSVP() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    // Hier spaeter API / Email / Formspree integrieren
     setSubmitted(true);
   };
 
@@ -19,8 +17,8 @@ export default function RSVP() {
         <h2 className="section-title">Anmeldung</h2>
         <p className="section-subtitle">
           Wir freuen uns, wenn du den Tag mit uns feierst! Bitte gib unten an,
-          mit wie vielen Personen du kommst und ob du vegetarisch essen moechtest.
-          Fragen kannst du jederzeit direkt an{" "}
+          mit wie vielen Personen du kommst und ob du vegetarisch essen
+          moechtest. Fragen kannst du jederzeit direkt an{" "}
           <a href="mailto:oka@julia-martin-heiraten.ch">
             oka@julia-martin-heiraten.ch
           </a>{" "}

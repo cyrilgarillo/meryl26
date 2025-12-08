@@ -1,9 +1,7 @@
-/* src/sections/Countdown.module.css */
-
 .wrapper {
   background: radial-gradient(
     circle at top,
-    rgba(66, 194, 255, 0.2),
+    rgba(201, 122, 138, 0.18),
     transparent 55%
   );
 }
@@ -27,6 +25,7 @@
 .value {
   font-size: 2rem;
   font-weight: 700;
+  color: var(--text-main);
 }
 
 .label {
@@ -34,4 +33,5 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-top: 2px;
+  color: var(--text-main);
 }

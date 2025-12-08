@@ -1,4 +1,3 @@
-// src/sections/Accommodation.tsx
 import styles from "./Accommodation.module.css";
 
 export default function Accommodation() {

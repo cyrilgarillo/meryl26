@@ -1,4 +1,3 @@
-// src/sections/Schedule.tsx
 import styles from "./Schedule.module.css";
 
 export default function Schedule() {

@@ -1,4 +1,3 @@
-// src/sections/Story.tsx
 import styles from "./Story.module.css";
 
 export default function Story() {

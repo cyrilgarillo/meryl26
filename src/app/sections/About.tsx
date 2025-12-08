@@ -1,10 +1,8 @@
-// src/sections/About.tsx
 import styles from "./About.module.css";
 
 export default function About() {
   return (
     <section id="about" className={styles.hero}>
-      {/* Overlay für Abdunkelung */}
       <div className={styles.overlay} />
 
       <div className={styles.contentWrapper}>

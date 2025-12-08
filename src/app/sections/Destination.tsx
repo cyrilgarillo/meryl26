@@ -1,4 +1,3 @@
-// src/sections/Destination.tsx
 import styles from "./Destination.module.css";
 import { WEDDING_MAP_EMBED_URL } from "../api/googleMaps";
 

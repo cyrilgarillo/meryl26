@@ -1,5 +1,3 @@
-/* src/sections/Schedule.module.css */
-
 .timeline {
   display: grid;
   gap: 1rem;
@@ -11,9 +9,11 @@
   border-radius: 16px;
   padding: 18px 20px;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+  border-left: 4px solid var(--accent-strong);
 }
 
 .dayTitle {
   font-family: var(--font-display);
   margin-bottom: 6px;
+  color: var(--text-main);
 }

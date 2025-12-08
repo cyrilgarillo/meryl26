@@ -1,14 +1,13 @@
-/* src/sections/Gifts.module.css */
-
 .wrapper {
-  background: #ffffff;
+  background: var(--bg-main);
 }
 
 .card {
   max-width: 600px;
   margin: 0 auto;
-  background: var(--bg-main);
+  background: #ffffff;
   padding: 20px 24px;
   border-radius: 18px;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid var(--accent-strong);
 }

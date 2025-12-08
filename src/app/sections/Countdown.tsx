@@ -1,4 +1,3 @@
-// src/sections/Countdown.tsx
 "use client";
 
 import { useEffect, useState } from "react";
@@ -46,7 +45,7 @@ export default function Countdown() {
   if (!timeLeft) return null;
 
   return (
-    <section id="countdown" className={`section ${styles.wrapper}`}>
+    <section id="countdown" className={`section page-offset ${styles.wrapper}`}>
       <div className="container text-center">
         <h2 className="section-title">Bis zum grossen Tag</h2>
         <p className="section-subtitle">

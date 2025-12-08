@@ -1,4 +1,3 @@
-// src/sections/WeddingABC.tsx
 import styles from "./WeddingABC.module.css";
 
 export default function WeddingABC() {

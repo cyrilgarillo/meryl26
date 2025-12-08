@@ -1,5 +1,3 @@
-/* src/sections/RSVP.module.css */
-
 .form {
   margin-top: 30px;
 }
@@ -9,15 +7,18 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 4px;
+  color: var(--text-main);
 }
 
 .input {
   border-radius: 0;
+  border-color: var(--accent-gold);
 }
 
 .textarea {
   border-radius: 0;
   resize: vertical;
+  border-color: var(--accent-gold);
 }
 
 .radioGroup {
@@ -32,4 +33,5 @@
   align-items: center;
   gap: 10px;
   font-size: 0.95rem;
+  color: var(--text-main);
 }

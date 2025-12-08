@@ -1,14 +1,12 @@
-/* src/sections/About.module.css */
-
 .hero {
   position: relative;
-  min-height: 100vh; /* komplette Höhe */
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: stretch;
   justify-content: center;
   color: #ffffff;
-  background-image: url("/images/hero-wedding.jpg"); /* Bild-Pfad anpassen */
+  background-image: url("/images/hero-wedding.jpg"); /* Bildpfad anpassen */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -19,9 +17,9 @@
   inset: 0;
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.55)
-    );
+      rgba(0, 0, 0, 0.25),
+      rgba(107, 94, 85, 0.75)
+    ); /* leicht taupe */
   z-index: 1;
 }
 
@@ -37,14 +35,13 @@
   max-width: 640px;
   margin: 0 auto;
   text-align: center;
-  padding: 120px 15px 80px; /* oben Platz für Navbar */
+  padding: 120px 15px 80px;
 }
 
 .smallTop {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-size: 0.8rem;
-  margin-bottom: 12px;
 }
 
 .heading {
@@ -87,7 +84,6 @@
   text-decoration: underline;
 }
 
-/* etwas mehr Platz auf breiten Screens */
 @media (min-width: 992px) {
   .contentInner {
     padding-top: 140px;

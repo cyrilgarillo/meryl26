@@ -1,4 +1,3 @@
-// src/sections/Gifts.tsx
 import styles from "./Gifts.module.css";
 
 export default function Gifts() {

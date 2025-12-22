@@ -1,39 +1,42 @@
 import styles from "./Destination.module.css";
-import { WEDDING_MAP_EMBED_URL } from "../api/googleMaps";
+import { getMapEmbedURL, WEDDING_CONFIG } from "@/config/wedding";
 
 export default function Destination() {
+  const mapURL = getMapEmbedURL(WEDDING_CONFIG.location);
+
   return (
     <section id="destination" className="section section-light">
       <div className="container">
-        <h2 className="section-title">Destination &amp; Location</h2>
+        <h2 className="section-title">Destination & Location</h2>
         <p className="section-subtitle">
-          Wir feiern auf Mallorca – Sonne, Meer und eine Portion Ferienfeeling.
-          Genauere Infos zur Trauung und zur Feier findet ihr hier.
+          We celebrate in Mallorca – sun, sea and a touch of vacation feeling.
+          You'll find more detailed information about the ceremony and the
+          celebration here.
         </p>
 
         <div className="row">
           <div className="col-lg-6 mb-4">
-            <h3 className={styles.subheading}>Trauung</h3>
+            <h3 className={styles.subheading}>Ceremony</h3>
             <p>
-              Die Trauung findet an einem besonderen Ort auf Mallorca statt
-              (genaue Adresse folgt). Plant genuegend Zeit fuer die Anreise ein
-              – in der Naehe stehen Parkplaetze zur Verfuegung.
+              The ceremony takes place at a special location in Mallorca (exact
+              address to follow). Please allow enough time for the journey – there
+              is parking available nearby.
             </p>
 
-            <h3 className={styles.subheading}>Feier</h3>
+            <h3 className={styles.subheading}>Celebration</h3>
             <p>
-              Anschliessend feiern wir in einem Restaurant mit Blick aufs Meer.
-              Dort erwartet euch Apéro, Dinner, gute Musik und hoffentlich
-              viele Tanzschritte bis in die Nacht.
+              Afterwards, we'll celebrate at a restaurant with a view of the sea.
+              You can look forward to aperitif, dinner, great music and hopefully
+              many dance moves into the night.
             </p>
 
-            <h3 className={styles.subheading}>Anfahrt &amp; Parking</h3>
+            <h3 className={styles.subheading}>Getting there & Parking</h3>
             <ul className={styles.list}>
-              <li>Parkplaetze in der Naehe der Location</li>
-              <li>Taxi/Transfer ab Palma gut moeglich</li>
+              <li>Parking available near the location</li>
+              <li>Taxi/transfer from Palma easily possible</li>
               <li>
-                Genaue Infos zu Shuttle-Optionen folgen, sobald alle Anmeldungen
-                da sind.
+                Detailed information about shuttle options coming soon, once we
+                have all registrations.
               </li>
             </ul>
           </div>
@@ -41,10 +44,11 @@ export default function Destination() {
           <div className="col-lg-6">
             <div className={styles.mapWrapper}>
               <iframe
-                src={WEDDING_MAP_EMBED_URL}
+                src={mapURL}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className={styles.map}
+                title="Wedding location map"
               ></iframe>
             </div>
           </div>

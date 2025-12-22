@@ -11,27 +11,27 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin-top: 30px;
+  margin-top: var(--spacing-xl);
 }
 
 .box {
   width: 120px;
-  padding: 18px 10px;
-  border-radius: 20px;
-  background: #ffffff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  background: var(--bg-alt);
+  box-shadow: var(--shadow-md);
 }
 
 .value {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--text-main);
+  color: var(--text-primary);
 }
 
 .label {
-  font-size: 0.9rem;
+  font-size: var(--font-size-sm);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-top: 2px;
-  color: var(--text-main);
+  margin-top: var(--spacing-xs);
+  color: var(--text-primary);
 }

@@ -1,19 +1,20 @@
 .subheading {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 10px;
-  color: var(--text-main);
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  margin-top: var(--spacing-sm);
+  color: var(--text-primary);
+  font-family: var(--font-serif);
 }
 
 .list {
   padding-left: 1.2rem;
-  margin-top: 8px;
+  margin-top: var(--spacing-xs);
 }
 
 .mapWrapper {
-  border-radius: 18px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-lg);
   min-height: 320px;
 }
 

@@ -7,14 +7,22 @@
 }
 
 .card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 18px 20px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
-  border-bottom: 3px solid var(--accent-strong);
+  background: var(--bg-alt);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--accent-primary);
+}
+
+.card h3 {
+  font-family: var(--font-serif);
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+  font-weight: 400;
 }
 
 .footerNote {
   text-align: center;
-  color: var(--text-main);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
 }

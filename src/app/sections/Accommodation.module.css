@@ -3,15 +3,16 @@
 }
 
 .card {
-  background: #ffffff;
-  padding: 20px 22px;
-  border-radius: 18px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
-  border-left: 4px solid var(--accent-gold);
+  background: var(--bg-alt);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--accent-warm);
 }
 
 .heading {
-  font-family: var(--font-display);
-  margin-bottom: 10px;
-  color: var(--text-main);
+  font-family: var(--font-serif);
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+  font-weight: 400;
 }

@@ -1,31 +1,51 @@
 .navbar {
-  transition: background 0.25s ease, box-shadow 0.25s ease;
+  transition: background var(--transition-base), box-shadow var(--transition-base);
 }
 
+/* ===== TOP STATE (Hero) ===== */
 .navbarTop {
-  background: transparent;
+  background: rgba(247, 239, 228, 0.75); /* Soft Sand */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
+/* ===== SCROLLED STATE ===== */
 .navbarScrolled {
-  background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: var(--bg-alt);
+  box-shadow: var(--shadow-sm);
 }
 
+/* ===== BRAND ===== */
 .brand {
-  font-family: var(--font-display);
-  font-size: 1.4rem;
+  font-family: var(--font-serif);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
 }
 
+/* ===== NAV LINKS ===== */
 .navLink {
-  font-size: 0.95rem;
-  margin-left: 0.5rem;
+  font-size: var(--font-size-sm);
+  margin-left: var(--spacing-sm);
+  color: var(--text-primary);
+  transition: color var(--transition-fast);
 }
 
-/* Toggler sichtbarer machen */
+.navLink:hover {
+  color: var(--accent-primary);
+}
+
+.navLink:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+/* ===== TOGGLER ===== */
 .toggler {
-  border-color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(107, 91, 77, 0.4); /* warm taupe */
 }
 
 .navbarScrolled .toggler {
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(107, 91, 77, 0.6);
 }

@@ -1,17 +1,18 @@
 .row {
-  margin-top: 30px;
+  margin-top: var(--spacing-xl);
 }
 
 .storyCard {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 20px 24px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-  border-top: 4px solid var(--accent-strong);
+  background: var(--bg-alt);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--accent-primary);
 }
 
 .storyTitle {
-  font-family: var(--font-display);
-  margin-bottom: 10px;
-  color: var(--text-main);
+  font-family: var(--font-serif);
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+  font-weight: 400;
 }

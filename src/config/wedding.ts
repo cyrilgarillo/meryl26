@@ -3,6 +3,8 @@
  * Centralized source of truth for wedding details
  */
 
+import { WEDDING_MAP_EMBED_URL } from "../app/api/googleMaps";
+
 export const WEDDING_CONFIG = {
   // Couple & Event Info
   coupleNames: {
@@ -10,7 +12,7 @@ export const WEDDING_CONFIG = {
     secondPerson: "Cyril",
     display: "Melanie & Cyril",
   },
-  
+
   // Wedding Date & Location
   weddingDate: new Date("2026-06-06T15:00:00+02:00"),
   weddingDateISO: "2026-06-06",
@@ -24,7 +26,7 @@ export const WEDDING_CONFIG = {
       lng: 2.7581,
     },
   },
-  
+
   // Metadata
   website: {
     title: "Melanie & Cyril – Wedding 06.06.2026",
@@ -33,10 +35,10 @@ export const WEDDING_CONFIG = {
     descriptionDE: "Unsere Hochzeitswebsite in Mallorca – alle Infos auf einen Blick.",
     language: "de",
   },
-  
+
   // Contact
   contactEmail: "oka@julia-martin-heiraten.ch",
-  
+
   // Navigation Sections
   sections: [
     { id: "about", label: "Home", labelDE: "Home" },
@@ -49,7 +51,7 @@ export const WEDDING_CONFIG = {
     { id: "rsvp", label: "RSVP", labelDE: "Anmeldung" },
     { id: "gifts", label: "Gifts", labelDE: "Geschenke" },
   ],
-  
+
   // Event Timeline
   schedule: {
     friday: {
@@ -99,10 +101,11 @@ export function getAllSectionIds() {
 
 /**
  * Get Google Maps embed URL
+ *
+ * IMPORTANT:
+ * We use a real Google Maps "embed" URL stored centrally in src/api/googleMaps.ts.
+ * Normal /maps/place/... URLs or vague query strings often show only "Mallorca" and not the exact venue.
  */
-export function getMapEmbedURL(location: typeof WEDDING_CONFIG.location) {
-  const query = encodeURIComponent(
-    `${location.venue}, ${location.destination}, ${location.country}`
-  );
-  return `https://www.google.com/maps?q=${query}&output=embed`;
+export function getMapEmbedURL(_location: typeof WEDDING_CONFIG.location) {
+  return WEDDING_MAP_EMBED_URL;
 }

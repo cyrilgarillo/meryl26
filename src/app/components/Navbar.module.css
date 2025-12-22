@@ -50,6 +50,18 @@
   border-color: rgba(231, 203, 169, 0.6);
 }
 
+/* ===== LOGOUT BUTTON ===== */
+.logoutBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.logoutBtn:hover {
+  opacity: 0.8;
+}
+
 /* ===== MOBILE MENU ===== */
 @media (max-width: 991.98px) {
   /* Ensure navbar collapse has proper background on mobile */

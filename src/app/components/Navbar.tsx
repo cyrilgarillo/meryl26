@@ -32,6 +32,15 @@ export default function Navbar() {
     }
   };
 
+  const handleLogout = async () => {
+    try {
+      await fetch("/api/logout", { method: "POST" });
+      window.location.href = "/login";
+    } catch (error) {
+      console.error("Logout error:", error);
+    }
+  };
+
   return (
     <nav
       className={`navbar navbar-expand-lg fixed-top navbar-light ${
@@ -68,6 +77,14 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
+            <li className="nav-item">
+              <button
+                onClick={handleLogout}
+                className={`nav-link ${styles.navLink} ${styles.logoutBtn}`}
+              >
+                Abmelden
+              </button>
+            </li>
           </ul>
         </div>
       </div>

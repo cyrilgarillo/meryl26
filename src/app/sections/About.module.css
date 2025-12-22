@@ -10,10 +10,15 @@
   /* Background Image */
   background-image: url("/images/hero-wedding.jpg");
   background-repeat: no-repeat;
-
-  /* OPTION 1: weniger Zoom */
-  background-size: 65%;
+  background-size: cover;
   background-position: center center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    /* OPTION 1: less zoom on desktop */
+    background-size: 65%;
+  }
 }
 
 /* Overlay for better text contrast */
@@ -41,29 +46,35 @@
   max-width: 640px;
   margin: 0 auto;
   text-align: center;
-  padding: 120px 15px 80px;
+  padding: 100px 20px 60px;
+}
+
+@media (min-width: 768px) {
+  .contentInner {
+    padding: 120px 15px 80px;
+  }
 }
 
 /* Text styles */
 .smallTop {
-  letter-spacing: 0.22em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  font-size: var(--font-size-sm);
+  font-size: clamp(0.7rem, 2vw, var(--font-size-sm));
 }
 
 .heading {
   font-family: var(--font-serif);
-  font-size: clamp(2.8rem, 4vw, 3.8rem);
+  font-size: clamp(2.2rem, 8vw, 3.8rem);
   margin-bottom: var(--spacing-xs);
 }
 
 .subheading {
-  font-size: var(--font-size-lg);
+  font-size: clamp(1rem, 3vw, var(--font-size-lg));
   margin-bottom: var(--spacing-md);
 }
 
 .text {
-  font-size: var(--font-size-base);
+  font-size: clamp(0.9rem, 2.5vw, var(--font-size-base));
   line-height: var(--line-height-normal);
   max-width: 520px;
   margin: 0 auto;

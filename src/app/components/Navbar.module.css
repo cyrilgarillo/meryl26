@@ -49,3 +49,21 @@
 .navbarScrolled .toggler {
   border-color: rgba(231, 203, 169, 0.6);
 }
+
+/* ===== MOBILE MENU ===== */
+@media (max-width: 991.98px) {
+  /* Ensure navbar collapse has proper background on mobile */
+  .navbar :global(.navbar-collapse) {
+    background: var(--bg-alt);
+    margin: 0 -16px;
+    padding: 16px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navLink {
+    margin-left: 0;
+    padding: 10px 0;
+    display: block;
+  }
+}

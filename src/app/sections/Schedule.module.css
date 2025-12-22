@@ -1,13 +1,19 @@
 .timeline {
   display: grid;
   gap: 1rem;
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .timeline {
+    margin-top: var(--spacing-xl);
+  }
 }
 
 .day {
   background: var(--bg-alt);
   border-radius: var(--radius-md);
-  padding: var(--spacing-lg);
+  padding: clamp(var(--spacing-md), 4vw, var(--spacing-lg));
   box-shadow: var(--shadow-md);
   border-left: 4px solid var(--accent-primary);
 }
@@ -17,4 +23,5 @@
   margin-bottom: var(--spacing-xs);
   color: var(--text-primary);
   font-weight: 400;
+  font-size: clamp(1rem, 3vw, var(--font-size-lg));
 }

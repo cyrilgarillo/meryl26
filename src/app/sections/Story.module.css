@@ -53,3 +53,35 @@
     padding: var(--section-padding) 0;
   }
 }
+
+.row {
+  margin-top: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .row {
+    margin-top: 0;
+  }
+}
+
+.storyCard {
+  background: var(--bg-alt);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--accent-primary);
+  margin-top: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .storyCard {
+    margin-top: 0;
+  }
+}
+
+.storyTitle {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}

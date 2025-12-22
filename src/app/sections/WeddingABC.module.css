@@ -9,9 +9,10 @@
 .card {
   background: var(--bg-alt);
   border-radius: var(--radius-md);
-  padding: var(--spacing-lg);
+  padding: clamp(var(--spacing-md), 4vw, var(--spacing-lg));
   box-shadow: var(--shadow-md);
   border-left: 4px solid var(--accent-primary);
+  height: 100%;
 }
 
 .card h3 {
@@ -19,6 +20,7 @@
   margin-bottom: var(--spacing-sm);
   color: var(--text-primary);
   font-weight: 400;
+  font-size: clamp(1rem, 3vw, var(--font-size-lg));
 }
 
 .footerNote {

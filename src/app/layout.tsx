@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
+import ClientBootstrap from "./components/ClientBootstrap";
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://melanie-cyril.vercel.app";
 
@@ -48,7 +49,10 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href={baseUrl} />
       </head>
-      <body>{children}</body>
+      <body>
+        <ClientBootstrap />
+        {children}
+      </body>
     </html>
   );
 }

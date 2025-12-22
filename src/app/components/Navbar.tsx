@@ -15,6 +15,23 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
+  const handleNavLinkClick = () => {
+    // Close the navbar collapse when a link is clicked (mobile only)
+    const navbarCollapse = document.getElementById("weddingNavbar");
+    if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+      // Try using Bootstrap's Collapse API first
+      const bootstrap = (window as any).bootstrap;
+      if (bootstrap && bootstrap.Collapse) {
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || 
+                          new bootstrap.Collapse(navbarCollapse, { toggle: false });
+        bsCollapse.hide();
+      } else {
+        // Fallback: manually remove the 'show' class if Bootstrap isn't loaded yet
+        navbarCollapse.classList.remove("show");
+      }
+    }
+  };
+
   return (
     <nav
       className={`navbar navbar-expand-lg fixed-top navbar-light ${
@@ -45,8 +62,7 @@ export default function Navbar() {
                 <a
                   href={`#${section.id}`}
                   className={`nav-link ${styles.navLink}`}
-                  data-bs-toggle="collapse"
-                  data-bs-target="#weddingNavbar"
+                  onClick={handleNavLinkClick}
                 >
                   {section.label}
                 </a>

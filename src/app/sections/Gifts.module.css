@@ -6,7 +6,7 @@
   max-width: 600px;
   margin: 0 auto;
   background: var(--bg-alt);
-  padding: var(--spacing-lg);
+  padding: clamp(var(--spacing-md), 4vw, var(--spacing-lg));
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   border-left: 4px solid var(--accent-primary);
@@ -17,11 +17,5 @@
   margin-bottom: var(--spacing-md);
   color: var(--text-primary);
   font-weight: 400;
-}
-
-.card h3 {
-  font-family: var(--font-serif);
-  margin-bottom: var(--spacing-md);
-  color: var(--text-primary);
-  font-weight: 400;
+  font-size: clamp(1rem, 3vw, var(--font-size-lg));
 }

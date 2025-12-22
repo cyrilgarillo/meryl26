@@ -33,7 +33,7 @@ export default function Navbar() {
           data-bs-target="#weddingNavbar"
           aria-controls="weddingNavbar"
           aria-expanded="false"
-          aria-label="Toggle navigation menu"
+          aria-label="Navigationsmenü umschalten"
         >
           <span className="navbar-toggler-icon"></span>
         </button>

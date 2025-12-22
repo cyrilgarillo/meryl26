@@ -34,7 +34,7 @@
 
 .input:focus {
   border-color: var(--accent-primary);
-  box-shadow: 0 0 0 3px rgba(201, 122, 138, 0.1);
+  box-shadow: 0 0 0 3px rgba(231, 203, 169, 0.25);
 }
 
 .textarea {
@@ -49,7 +49,7 @@
 
 .textarea:focus {
   border-color: var(--accent-primary);
-  box-shadow: 0 0 0 3px rgba(201, 122, 138, 0.1);
+  box-shadow: 0 0 0 3px rgba(231, 203, 169, 0.25);
 }
 
 .radioGroup {
@@ -69,7 +69,7 @@
 }
 
 .successMessage {
-  background: linear-gradient(135deg, rgba(201, 122, 138, 0.1), rgba(231, 203, 169, 0.1));
+  background: linear-gradient(135deg, rgba(107, 94, 85, 0.2), rgba(231, 203, 169, 0.15));
   border-left: 4px solid var(--accent-primary);
   padding: var(--spacing-lg);
   border-radius: var(--radius-md);

@@ -7,36 +7,35 @@ export default function Destination() {
   return (
     <section id="destination" className="section section-light">
       <div className="container">
-        <h2 className="section-title">Destination & Location</h2>
+        <h2 className="section-title">Destination & Ort</h2>
         <p className="section-subtitle">
-          We celebrate in Mallorca – sun, sea and a touch of vacation feeling.
-          You'll find more detailed information about the ceremony and the
-          celebration here.
+          Wir feiern auf Mallorca – Sonne, Meer und eine Prise Urlaubsfeeling.
+          Hier findet ihr genauere Infos zur Zeremonie und zum Fest.
         </p>
 
         <div className="row">
           <div className="col-lg-6 mb-4">
-            <h3 className={styles.subheading}>Ceremony</h3>
+            <h3 className={styles.subheading}>Trauung</h3>
             <p>
-              The ceremony takes place at a special location in Mallorca (exact
-              address to follow). Please allow enough time for the journey – there
-              is parking available nearby.
+              Die Trauung findet an einem besonderen Ort auf Mallorca statt (genaue
+              Adresse folgt). Plant bitte genügend Zeit für die Anfahrt ein – es
+              gibt Parkplätze in der Nähe.
             </p>
 
-            <h3 className={styles.subheading}>Celebration</h3>
+            <h3 className={styles.subheading}>Feier</h3>
             <p>
-              Afterwards, we'll celebrate at a restaurant with a view of the sea.
-              You can look forward to aperitif, dinner, great music and hopefully
-              many dance moves into the night.
+              Anschliessend feiern wir in einem Restaurant mit Blick aufs Meer.
+              Freut euch auf Apéro, Dinner, tolle Musik und hoffentlich viele
+              Tanzmoves bis in die Nacht.
             </p>
 
-            <h3 className={styles.subheading}>Getting there & Parking</h3>
+            <h3 className={styles.subheading}>Anfahrt & Parken</h3>
             <ul className={styles.list}>
-              <li>Parking available near the location</li>
-              <li>Taxi/transfer from Palma easily possible</li>
+              <li>Parkplätze in der Nähe der Location vorhanden</li>
+              <li>Taxi/Transfer ab Palma problemlos möglich</li>
               <li>
-                Detailed information about shuttle options coming soon, once we
-                have all registrations.
+                Genauere Infos zu Shuttle-Optionen folgen, sobald wir alle
+                Anmeldungen haben.
               </li>
             </ul>
           </div>
@@ -48,7 +47,7 @@ export default function Destination() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className={styles.map}
-                title="Wedding location map"
+                title="Karte der Hochzeitslocation"
               ></iframe>
             </div>
           </div>

@@ -22,8 +22,8 @@
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(8, 8, 8, 0.25),
-    rgba(15, 15, 15, 0.75)
+    rgba(0, 0, 0, 0.25),
+    rgba(107, 94, 85, 0.75)
   );
   z-index: 1;
 }

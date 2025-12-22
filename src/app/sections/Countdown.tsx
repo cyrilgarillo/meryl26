@@ -49,15 +49,15 @@ export default function Countdown() {
     return (
       <section id="countdown" className={`section page-offset ${styles.wrapper}`}>
         <div className="container text-center">
-          <h2 className="section-title">Until the big day</h2>
+          <h2 className="section-title">Bis zum grossen Tag</h2>
           <p className="section-subtitle">
-            We're counting down the days until we celebrate with you in Mallorca.
+            Wir zählen die Tage bis wir mit euch auf Mallorca feiern.
           </p>
           <div className={styles.counterRow}>
-            <CounterBox label="Days" value={0} />
-            <CounterBox label="Hours" value={0} />
-            <CounterBox label="Minutes" value={0} />
-            <CounterBox label="Seconds" value={0} />
+            <CounterBox label="Tage" value={0} />
+            <CounterBox label="Stunden" value={0} />
+            <CounterBox label="Minuten" value={0} />
+            <CounterBox label="Sekunden" value={0} />
           </div>
         </div>
       </section>
@@ -67,16 +67,16 @@ export default function Countdown() {
   return (
     <section id="countdown" className={`section page-offset ${styles.wrapper}`}>
       <div className="container text-center">
-        <h2 className="section-title">Until the big day</h2>
+        <h2 className="section-title">Bis zum grossen Tag</h2>
         <p className="section-subtitle">
-          We're counting down the days until we celebrate with you in Mallorca.
+          Wir zählen die Tage bis wir mit euch auf Mallorca feiern.
         </p>
 
         <div className={styles.counterRow}>
-          <CounterBox label="Days" value={timeLeft.days} />
-          <CounterBox label="Hours" value={timeLeft.hours} />
-          <CounterBox label="Minutes" value={timeLeft.minutes} />
-          <CounterBox label="Seconds" value={timeLeft.seconds} />
+          <CounterBox label="Tage" value={timeLeft.days} />
+          <CounterBox label="Stunden" value={timeLeft.hours} />
+          <CounterBox label="Minuten" value={timeLeft.minutes} />
+          <CounterBox label="Sekunden" value={timeLeft.seconds} />
         </div>
       </div>
     </section>

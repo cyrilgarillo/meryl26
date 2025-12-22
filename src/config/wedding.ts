@@ -41,15 +41,15 @@ export const WEDDING_CONFIG = {
 
   // Navigation Sections
   sections: [
-    { id: "about", label: "Home", labelDE: "Home" },
-    { id: "countdown", label: "Countdown", labelDE: "Countdown" },
-    { id: "story", label: "Our Story", labelDE: "Unsere Geschichte" },
-    { id: "destination", label: "Destination & Location", labelDE: "Destination & Location" },
-    { id: "accommodation", label: "Accommodation & Travel", labelDE: "Unterkunft & Anreise" },
-    { id: "schedule", label: "Schedule", labelDE: "Ablauf" },
-    { id: "abc", label: "Wedding A-Z", labelDE: "Hochzeits-ABC" },
-    { id: "rsvp", label: "RSVP", labelDE: "Anmeldung" },
-    { id: "gifts", label: "Gifts", labelDE: "Geschenke" },
+    { id: "about", label: "Startseite" },
+    { id: "countdown", label: "Countdown" },
+    { id: "story", label: "Unsere Geschichte" },
+    { id: "destination", label: "Destination & Ort" },
+    { id: "accommodation", label: "Unterkunft & Anreise" },
+    { id: "schedule", label: "Ablauf" },
+    { id: "abc", label: "Hochzeits-ABC" },
+    { id: "rsvp", label: "Anmeldung" },
+    { id: "gifts", label: "Geschenke" },
   ],
 
   // Event Timeline

@@ -4,7 +4,7 @@
 
 /* ===== TOP STATE (Hero) ===== */
 .navbarTop {
-  background: rgba(247, 239, 228, 0.75); /* Soft Sand */
+  background: rgba(107, 94, 85, 0.65); /* Warm taupe */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -43,9 +43,9 @@
 
 /* ===== TOGGLER ===== */
 .toggler {
-  border-color: rgba(107, 91, 77, 0.4); /* warm taupe */
+  border-color: rgba(231, 203, 169, 0.4); /* Champagne */
 }
 
 .navbarScrolled .toggler {
-  border-color: rgba(107, 91, 77, 0.6);
+  border-color: rgba(231, 203, 169, 0.6);
 }

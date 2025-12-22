@@ -14,20 +14,20 @@ export default function Hero() {
             </p>
             <h1 className={styles.heading}>{WEDDING_CONFIG.coupleNames.display}</h1>
             <p className={styles.subheading}>
-              In love – Engaged – Soon married
+              Verliebt – Verlobt – Bald verheiratet
             </p>
             <p className={styles.text}>
-              We're thrilled to celebrate this special day with you under the sun,
-              sea and palm trees. Here you'll find all the information about our
-              wedding in Mallorca, the trip and how to register.
+              Wir freuen uns riesig, diesen besonderen Tag mit euch unter Sonne,
+              Meer und Palmen zu feiern. Hier findet ihr alle Informationen zu
+              unserer Hochzeit auf Mallorca, zur Anreise und zur Anmeldung.
             </p>
 
             <div className={styles.buttons}>
               <a href="#rsvp" className={`btn btn-wedding ${styles.mainButton}`}>
-                Register now
+                Jetzt anmelden
               </a>
               <a href="#story" className={styles.secondaryLink}>
-                Discover our story ↓
+                Unsere Geschichte entdecken ↓
               </a>
             </div>
           </div>

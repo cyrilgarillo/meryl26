@@ -35,11 +35,11 @@ export default function RSVP() {
   return (
     <section id="rsvp" className="section section-light">
       <div className="container">
-        <h2 className="section-title">RSVP</h2>
+        <h2 className="section-title">Anmeldung</h2>
         <p className="section-subtitle">
-          We'd love to celebrate this special day with you! Please let us know how many
-          people will be joining and if you have any dietary preferences. Questions?
-          Feel free to contact us anytime at{" "}
+          Wir freuen uns riesig, diesen besonderen Tag mit euch zu feiern! Bitte lasst uns
+          wissen, wie viele Personen kommen und ob ihr spezielle Essenswünsche habt. Fragen?
+          Meldet euch jederzeit bei{" "}
           <a href={`mailto:${WEDDING_CONFIG.contactEmail}`}>
             {WEDDING_CONFIG.contactEmail}
           </a>
@@ -49,8 +49,8 @@ export default function RSVP() {
         {submitted && (
           <div className={styles.successMessage} role="status" aria-live="polite">
             <p>
-              Thank you for your registration! We'll get back to you as soon as we have more
-              information.
+              Vielen Dank für deine Anmeldung! Wir melden uns bei dir, sobald wir weitere
+              Informationen haben.
             </p>
           </div>
         )}
@@ -59,7 +59,7 @@ export default function RSVP() {
           <div className="row g-3">
             <div className="col-md-6">
               <label htmlFor="firstName" className={styles.label}>
-                First Name
+                Vorname
               </label>
               <input
                 id="firstName"
@@ -72,7 +72,7 @@ export default function RSVP() {
             </div>
             <div className="col-md-6">
               <label htmlFor="lastName" className={styles.label}>
-                Last Name
+                Nachname
               </label>
               <input
                 id="lastName"
@@ -80,12 +80,12 @@ export default function RSVP() {
                 type="text"
                 className={`form-control ${styles.input}`}
                 name="lastName"
-                placeholder="Smith"
+                placeholder="Müller"
               />
             </div>
             <div className="col-md-6">
               <label htmlFor="phone" className={styles.label}>
-                Phone Number (optional)
+                Telefonnummer (optional)
               </label>
               <input
                 id="phone"
@@ -97,7 +97,7 @@ export default function RSVP() {
             </div>
             <div className="col-md-6">
               <label htmlFor="email" className={styles.label}>
-                Email Address
+                E-Mail-Adresse
               </label>
               <input
                 id="email"
@@ -105,13 +105,13 @@ export default function RSVP() {
                 type="email"
                 className={`form-control ${styles.input}`}
                 name="email"
-                placeholder="melanie@example.com"
+                placeholder="melanie@beispiel.ch"
               />
             </div>
 
             <div className="col-md-6">
               <label htmlFor="guests" className={styles.label}>
-                Number of Guests
+                Anzahl Gäste
               </label>
               <select
                 id="guests"
@@ -121,7 +121,7 @@ export default function RSVP() {
               >
                 {[1, 2, 3, 4, 5, 6].map((n) => (
                   <option key={n} value={n}>
-                    {n} {n === 1 ? "person" : "people"}
+                    {n} {n === 1 ? "Person" : "Personen"}
                   </option>
                 ))}
               </select>
@@ -129,51 +129,51 @@ export default function RSVP() {
 
             <div className="col-md-6">
               <label htmlFor="dietary" className={styles.label}>
-                Dietary Preferences (optional)
+                Essenswünsche (optional)
               </label>
               <select
                 id="dietary"
                 name="dietary"
                 className={`form-select ${styles.input}`}
               >
-                <option value="">No restrictions</option>
-                <option value="vegetarian">Vegetarian</option>
+                <option value="">Keine Einschränkungen</option>
+                <option value="vegetarian">Vegetarisch</option>
                 <option value="vegan">Vegan</option>
-                <option value="gluten-free">Gluten-free</option>
-                <option value="other">Other</option>
+                <option value="gluten-free">Glutenfrei</option>
+                <option value="other">Andere</option>
               </select>
             </div>
 
             <div className="col-12">
               <label htmlFor="message" className={styles.label}>
-                Special Requests or Notes (optional)
+                Besondere Wünsche oder Anmerkungen (optional)
               </label>
               <textarea
                 id="message"
                 className={`form-control ${styles.textarea}`}
                 rows={4}
                 name="message"
-                placeholder="Let us know if you have any special requests or questions..."
+                placeholder="Lasst uns wissen, wenn ihr besondere Wünsche oder Fragen habt..."
               ></textarea>
             </div>
           </div>
 
           <div className={styles.radioGroup}>
             <fieldset>
-              <legend className={styles.legend}>Will you be joining us?</legend>
+              <legend className={styles.legend}>Werdet ihr dabei sein?</legend>
               <RadioItem
-                label="I'll be at the aperitif and the celebration"
+                label="Ich komme zum Apéro und zur Feier"
                 value="both"
                 name="attendance"
                 required
               />
               <RadioItem
-                label="I'll only be at the aperitif"
+                label="Ich komme nur zum Apéro"
                 value="aperitif-only"
                 name="attendance"
               />
               <RadioItem
-                label="Unfortunately, I have to decline"
+                label="Leider muss ich absagen"
                 value="decline"
                 name="attendance"
               />
@@ -185,7 +185,7 @@ export default function RSVP() {
             className="btn btn-wedding mt-4"
             disabled={isLoading}
           >
-            {isLoading ? "Sending..." : "Submit"}
+            {isLoading ? "Wird gesendet..." : "Absenden"}
           </button>
         </form>
       </div>

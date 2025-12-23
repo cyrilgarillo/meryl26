@@ -27,8 +27,7 @@ export default function WeddingABC() {
               <h3>W wie Wetter</h3>
               <p>
                 Anfang Juni ist es auf Mallorca angenehm warm. Trotzdem empfehlen
-                wir eine leichte Jacke fuer den Abend, falls es am Meer
-                frischer wird.
+                wir eine leichte Jacke fuer den Abend, falls es etwas frischer wird.
               </p>
             </div>
           </div>

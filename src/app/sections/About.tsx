@@ -18,7 +18,7 @@ export default function Hero() {
             </p>
             <p className={styles.text}>
               Wir freuen uns riesig, diesen besonderen Tag mit euch unter Sonne,
-              Meer und Palmen zu feiern. Hier findet ihr alle Informationen zu
+              Meeresluft und Palmen zu feiern. Hier findet ihr alle Informationen zu
               unserer Hochzeit auf Mallorca, zur Anreise und zur Anmeldung.
             </p>
 

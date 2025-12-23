@@ -82,3 +82,22 @@
   margin-bottom: var(--spacing-lg);
   color: var(--text-primary);
 }
+
+.errorMessage {
+  background: linear-gradient(135deg, rgba(220, 53, 69, 0.1), rgba(220, 53, 69, 0.05));
+  border-left: 4px solid #dc3545;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-lg);
+  color: #721c24;
+}
+
+.errorMessage p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.successMessage p {
+  margin: 0;
+  font-weight: 500;
+}

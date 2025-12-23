@@ -1,34 +1,60 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useState, useRef } from "react";
 import styles from "./RSVP.module.css";
-import { WEDDING_CONFIG } from "@/config/wedding";
+
+type FormStatus = "idle" | "sending" | "success" | "error";
 
 export default function RSVP() {
-  const [submitted, setSubmitted] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const [status, setStatus] = useState<FormStatus>("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+  const formRef = useRef<HTMLFormElement | null>(null);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsLoading(true);
+    setStatus("sending");
+    setErrorMessage("");
 
     try {
       const formData = new FormData(e.currentTarget);
       const data = Object.fromEntries(formData);
 
-      // TODO: Replace with actual form submission endpoint
-      // Example: await fetch('/api/rsvp', { method: 'POST', body: JSON.stringify(data) })
-      console.log("Form submission data:", data);
+      // Client-side validation
+      if (!data.firstName || !data.lastName || !data.email || !data.attendance) {
+        setStatus("error");
+        setErrorMessage("Bitte fülle alle Pflichtfelder aus.");
+        return;
+      }
 
-      setSubmitted(true);
-      e.currentTarget.reset();
+      // Check honeypot (anti-spam)
+      if (data.website) {
+        // Silently reject spam - show success but don't send
+        setStatus("success");
+        formRef.current?.reset();
+        setTimeout(() => setStatus("idle"), 5000);
+        return;
+      }
 
-      // Auto-hide message after 5 seconds
-      setTimeout(() => setSubmitted(false), 5000);
+      const response = await fetch('/api/rsvp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.ok) {
+        setStatus("success");
+        formRef.current?.reset();
+        setTimeout(() => setStatus("idle"), 5000);
+      } else {
+        setStatus("error");
+        setErrorMessage(result.message || "Senden fehlgeschlagen, bitte versuche es erneut.");
+      }
     } catch (error) {
       console.error("Form submission error:", error);
-    } finally {
-      setIsLoading(false);
+      setStatus("error");
+      setErrorMessage("Senden fehlgeschlagen, bitte versuche es erneut.");
     }
   };
 
@@ -38,24 +64,31 @@ export default function RSVP() {
         <h2 className="section-title">Anmeldung</h2>
         <p className="section-subtitle">
           Wir freuen uns riesig, diesen besonderen Tag mit euch zu feiern! Bitte lasst uns
-          wissen, wie viele Personen kommen und ob ihr spezielle Essenswünsche habt. Fragen?
-          Meldet euch jederzeit bei{" "}
-          <a href={`mailto:${WEDDING_CONFIG.contactEmail}`}>
-            {WEDDING_CONFIG.contactEmail}
-          </a>
-          .
+          wissen, wie viele Personen kommen und ob ihr spezielle Essenswünsche habt.
         </p>
 
-        {submitted && (
+        {status === "success" && (
           <div className={styles.successMessage} role="status" aria-live="polite">
-            <p>
-              Vielen Dank für deine Anmeldung! Wir melden uns bei dir, sobald wir weitere
-              Informationen haben.
-            </p>
+            <p>Nachricht versendet</p>
           </div>
         )}
 
-        <form className={styles.form} onSubmit={handleSubmit} noValidate>
+        {status === "error" && (
+          <div className={styles.errorMessage} role="alert" aria-live="assertive">
+            <p>{errorMessage}</p>
+          </div>
+        )}
+
+        <form ref={formRef} className={styles.form} onSubmit={handleSubmit} noValidate>
+          {/* Honeypot field (hidden) - anti-spam */}
+          <input
+            type="text"
+            name="website"
+            style={{ display: 'none' }}
+            tabIndex={-1}
+            autoComplete="off"
+          />
+          
           <div className="row g-3">
             <div className="col-md-6">
               <label htmlFor="firstName" className={styles.label}>
@@ -183,9 +216,9 @@ export default function RSVP() {
           <button
             type="submit"
             className="btn btn-wedding mt-4"
-            disabled={isLoading}
+            disabled={status === "sending"}
           >
-            {isLoading ? "Wird gesendet..." : "Absenden"}
+            {status === "sending" ? "Wird gesendet..." : "Absenden"}
           </button>
         </form>
       </div>

@@ -25,7 +25,7 @@ export default function Destination() {
             <p>
               Anschliessend feiern wir in einem Restaurant mit Blick aufs Meer.
               Freut euch auf Apéro, Dinner, tolle Musik und hoffentlich viele
-              Tanzmoves bis in die Nacht.
+              Tanzmoves bis in die Nacht.update
             </p>
 
             <h3 className={styles.subheading}>Anfahrt & Parken</h3>

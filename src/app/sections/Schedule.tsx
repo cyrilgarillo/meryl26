@@ -7,30 +7,30 @@ export default function Schedule() {
         <h2 className="section-title">Der Ablauf</h2>
         <p className="section-subtitle">
           Damit ihr wisst, was euch an den einzelnen Tagen erwartet – von
-          Freitagabend bis zum gemuetlichen Sonntagmorgen.
+          Freitagabend bis zum gemütlichen Sonntagmorgen.
         </p>
 
         <div className={styles.timeline}>
           <Day
-            title="Freitag – Ankommen &amp; Welcome"
+            title="Freitag Get-together"
             items={[
-              "ab 16:00 · Anreise und Check-in",
-              "19:00 · Lockeres Get-together / Apéro",
-              "open end · Anstossen, Ankommen, Ferienmodus aktivieren",
+              "18:00 · Treffen in der Finca für ein gemütliches Abendessen",
+              "Anstossen, Ankommen, Ferienmodus aktivieren und einstimmen auf die Hochzeit",
             ]}
           />
           <Day
-            title="Samstag – Der grosse Tag"
+            title="Samstag Der grosse Tag"
             items={[
-              "14:30 · Eintreffen der Gaeste an der Trauungs-Location",
-              "15:00 · Trauung",
-              "17:00 · Apéro &amp; Fotos",
-              "19:00 · Dinner &amp; Party",
-              "open end · Tanz, Drinks und ganz viel Liebe",
+              "15:15 · Eintreffen der Gäste in der Finca",
+              "15:30 · Welcome Drink",
+              "16:00 · Freie Trauung",
+              "17:00 · Apéro",
+              "19:00 · Dinner",
+              "21:30 · Tanz, Drinks & ganz viel Liebe",
             ]}
           />
           <Day
-            title="Sonntag – Gemeinsames Fruehstueck"
+            title="Sonntag Gemeinsames Fruehstueck"
             items={[
               "09:30–11:30 · Gemeinsames Fruehstueck / Brunch",
               "Verabschiedung &amp; individuelle Rueckreise",

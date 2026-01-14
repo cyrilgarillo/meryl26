@@ -48,10 +48,6 @@ export default function Navbar() {
       } ${scrolled ? styles.navbarScrolled : styles.navbarTop}`}
     >
       <div className="container">
-        <Link href="#about" className={`navbar-brand ${styles.brand}`}>
-          {WEDDING_CONFIG.coupleNames.display}
-        </Link>
-
         <button
           className={`navbar-toggler ${styles.toggler}`}
           type="button"

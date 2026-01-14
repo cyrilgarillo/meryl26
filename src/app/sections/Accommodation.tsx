@@ -6,8 +6,8 @@ export default function Accommodation() {
       <div className="container">
         <h2 className="section-title">Unterkunft &amp; Anreise</h2>
         <p className="section-subtitle">
-          Hier ein paar Tipps fuer eure Reise nach Mallorca und passende
-          Hotels in der Naehe der Location.
+          Hier ein paar Tipps für eure Reise nach Mallorca und passende
+          Hotels in der Nähe der Location.
         </p>
 
         <div className="row g-4">
@@ -20,13 +20,8 @@ export default function Accommodation() {
                   (PMI).
                 </li>
                 <li>
-                  <strong>Transfer:</strong> Mietwagen, Taxi oder Shuttle sind
-                  am Flughafen verfuegbar.
-                </li>
-                <li>
-                  <strong>Reisepass:</strong> Fuer EU-Buergende reicht eine
-                  gueltige ID; bitte prueft rechtzeitig die Gueltigkeit eurer
-                  Dokumente.
+                  <strong>Transfer:</strong> Mietwagen oder Taxi sind
+                  am Flughafen verfügbar.
                 </li>
               </ul>
             </div>
@@ -36,13 +31,13 @@ export default function Accommodation() {
             <div className={styles.card}>
               <h3 className={styles.heading}>Unterkunft</h3>
               <ul>
-                <li>Hotel A – Strandnah, ungefaehr 10–15 Minuten zur Location</li>
-                <li>Hotel B – Ruhig gelegen, gut fuer Familien</li>
-                <li>Airbnb / Finca – perfekt fuer Gruppen oder laengerer Aufenthalt</li>
+                <li>Hotel A – Strandnah, ungefähr 10–15 Minuten zur Location</li>
+                <li>Hotel B – Ruhig gelegen, gut für Familien</li>
+                <li>Airbnb / Finca – perfekt für Gruppen oder längerer Aufenthalt</li>
               </ul>
               <p className="mt-2">
-                Wir empfehlen euch fruehzeitig zu buchen, da Juni auf Mallorca
-                zur Hauptsaison gehoert.
+                Wir empfehlen euch frühzeitig zu buchen, da Juni auf Mallorca
+                zur Hauptsaison gehört.
               </p>
             </div>
           </div>

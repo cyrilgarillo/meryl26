@@ -6,8 +6,9 @@ export default function Gifts() {
       <div className="container">
         <h2 className="section-title">Geschenke</h2>
         <p className="section-subtitle">
-          Eure Zeit und eure Reise nach Mallorca sind fuer uns das grösste Geschenk.
-          Wenn ihr uns darueber hinaus etwas schenken möchtet, freuen wir uns ueber einen Beitrag zum Hochzeitsfest. 
+          Eure Zeit und eure Reise nach Mallorca sind für uns das grösste Geschenk.
+          Wenn ihr uns darüber hinaus etwas schenken möchtet, freuen wir uns über eine Unterstützung zu unserer nächsten Reise.
+          Australien und Japan stehen ganz oben auf unserer Liste! 
         </p>
 
         <div className={styles.card}>

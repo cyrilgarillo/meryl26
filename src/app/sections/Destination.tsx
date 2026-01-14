@@ -9,7 +9,7 @@ export default function Destination() {
       <div className="container">
         <h2 className="section-title">Destination & Ort</h2>
         <p className="section-subtitle">
-          Wir feiern auf Mallorca – Sonne, Meer und eine Prise Urlaubsfeeling.
+          Wir feiern auf Mallorca – Sonne und eine Prise Urlaubsfeeling.
           Hier findet ihr genauere Infos zur Zeremonie und zum Fest.
         </p>
 
@@ -17,9 +17,8 @@ export default function Destination() {
           <div className="col-lg-6 mb-4">
             <h3 className={styles.subheading}>Trauung</h3>
             <p>
-              Die Trauung findet an einem besonderen Ort auf Mallorca statt (genaue
-              Adresse folgt). Plant bitte genügend Zeit für die Anfahrt ein – es
-              gibt Parkplätze in der Nähe.
+              Die Trauung findet an einem besonderen Ort auf Mallorca statt (Cami de sa Serra, Km,1,2 07260 Porreres, Balearic Islands, Spanien). Plant bitte genügend Zeit für die Anfahrt ein – es
+              gibt Parkplätze direkt vor der Finca.
             </p>
 
             <h3 className={styles.subheading}>Feier</h3>

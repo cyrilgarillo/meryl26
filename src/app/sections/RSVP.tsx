@@ -195,15 +195,10 @@ export default function RSVP() {
             <fieldset>
               <legend className={styles.legend}>Werdet ihr dabei sein?</legend>
               <RadioItem
-                label="Ich komme zum Apéro und zur Feier"
+                label="Ich bin dabei"
                 value="both"
                 name="attendance"
                 required
-              />
-              <RadioItem
-                label="Ich komme nur zum Apéro"
-                value="aperitif-only"
-                name="attendance"
               />
               <RadioItem
                 label="Leider muss ich absagen"

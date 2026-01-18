@@ -9,34 +9,47 @@ export default function Destination() {
       <div className="container">
         <h2 className="section-title">Destination & Ort</h2>
         <p className="section-subtitle">
-          Wir feiern auf Mallorca – Sonne und eine Prise Urlaubsfeeling.
-          Hier findet ihr genauere Infos zur Zeremonie und zum Fest.
+          Wir feiern auf Mallorca, Sonne und eine Prise Urlaubsfeeling.
+          Hier findet ihr genauere Infos zum Ort.
         </p>
 
         <div className="row">
           <div className="col-lg-6 mb-4">
-            <h3 className={styles.subheading}>Trauung</h3>
-            <p>
-              Die Trauung findet an einem besonderen Ort auf Mallorca statt (Cami de sa Serra, Km,1,2 07260 Porreres, Balearic Islands, Spanien). Plant bitte genügend Zeit für die Anfahrt ein – es
-              gibt Parkplätze direkt vor der Finca.
-            </p>
+            {/* Optional: Kleine Bild-Thumbnails - Bilder unter /public/images/ ablegen */}
+            {/* 
+            <div className={styles.imageGrid}>
+              <img 
+                src="/images/porreres.jpg" 
+                alt="Porreres Landschaft" 
+                className={styles.thumb}
+                loading="lazy"
+              />
+              <img 
+                src="/images/can-pastilla.jpg" 
+                alt="Can Pastilla Strand" 
+                className={styles.thumb}
+                loading="lazy"
+              />
+            </div>
+            */}
 
-            <h3 className={styles.subheading}>Feier</h3>
-            <p>
-              Anschliessend feiern wir in einem Restaurant mit Blick aufs Meer.
-              Freut euch auf Apéro, Dinner, tolle Musik und hoffentlich viele
-              Tanzmoves bis in die Nacht.update
-            </p>
+            <div className={styles.gridLeft}>
+              {/* Card 1: Trauung */}
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Trauung in Porreres</h3>
+                <div className={styles.cardText}>
+                  <p className={styles.metaRow}>
+                    <strong>Adresse:</strong> Cami de sa Serra, Km 1,2, 07260 Porreres, Balearic Islands, Spanien
+                  </p>
+                  <p>
+                    Die Trauung findet im Landesinneren, in der Nähe von Porreres in der Finca Can Feliu statt. 
+                  </p>
+                </div>
+              </div>
 
-            <h3 className={styles.subheading}>Anfahrt & Parken</h3>
-            <ul className={styles.list}>
-              <li>Parkplätze in der Nähe der Location vorhanden</li>
-              <li>Taxi/Transfer ab Palma problemlos möglich</li>
-              <li>
-                Genauere Infos zu Shuttle-Optionen folgen, sobald wir alle
-                Anmeldungen haben.
-              </li>
-            </ul>
+
+
+            </div>
           </div>
 
           <div className="col-lg-6">

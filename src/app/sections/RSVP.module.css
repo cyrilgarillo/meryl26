@@ -5,6 +5,15 @@
   margin-right: auto;
 }
 
+.deadline {
+  text-align: center;
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--accent-primary);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
 @media (min-width: 768px) {
   .form {
     margin-top: var(--spacing-xl);

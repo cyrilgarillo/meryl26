@@ -1,3 +1,148 @@
+/* Story Grid */
+.storyGrid {
+  margin-top: 2rem;
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Person Card */
+.personCard {
+  background: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl, 0 20px 40px rgba(0, 0, 0, 0.15));
+}
+
+.personTitle {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-2xl);
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid var(--accent-primary);
+  padding-bottom: 0.75rem;
+  width: 100%;
+}
+
+/* Trait List */
+.traitList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.traitItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: rgba(var(--accent-primary-rgb, 174, 140, 103), 0.05);
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+}
+
+.traitItem:hover {
+  background: rgba(var(--accent-primary-rgb, 174, 140, 103), 0.12);
+  transform: translateX(5px);
+}
+
+.traitItem:last-child {
+  margin-bottom: 0;
+}
+
+.emoji {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* Story Footer */
+.divider {
+  border: none;
+  border-top: 1px solid var(--text-primary, #333);
+  opacity: 0.2;
+  margin: 2.5rem 0 2rem 0;
+}
+
+.finalMessage {
+  text-align: center;
+  padding: 1.5rem 0 0 0;
+}
+
+.homeMessage {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-xl);
+  font-weight: 300;
+  color: var(--text-primary);
+  margin: 0;
+  font-style: italic;
+  opacity: 0.85;
+  animation: fadeIn 1.2s ease-in 0.5s both;
+}
+
+.storyFooter {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.loveMessage {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-2xl);
+  font-weight: 400;
+  color: var(--text-primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  animation: fadeIn 1s ease-in 0.3s both;
+}
+
+.heartEmoji {
+  font-size: 2.5rem;
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(1.1);
+  }
+  20%, 40% {
+    transform: scale(1);
+  }
+}
+
+/* Original Story Styles */
 .story {
   background: var(--bg-main);
   padding: var(--section-padding-mobile) 0;
@@ -84,4 +229,33 @@
   font-size: var(--font-size-lg);
   margin-bottom: var(--spacing-sm);
   color: var(--text-primary);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .personCard {
+    padding: 1.5rem;
+  }
+
+  .personTitle {
+    font-size: var(--font-size-xl);
+  }
+
+  .traitItem {
+    font-size: var(--font-size-md);
+  }
+
+  .emoji {
+    font-size: 1.5rem;
+  }
+
+  .loveMessage {
+    font-size: var(--font-size-xl);
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .heartEmoji {
+    font-size: 2rem;
+  }
 }

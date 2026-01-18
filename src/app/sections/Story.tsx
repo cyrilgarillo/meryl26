@@ -2,43 +2,167 @@ import styles from "./Story.module.css";
 
 export default function Story() {
   return (
-    <section id="story" className="section section-light">
-      <div className="container">
-        <h2 className="section-title">Unsere Geschichte</h2>
-        <p className="section-subtitle">
-          Eine kurze Story wie wir uns kennengelernt haben – in der Kurzversion
-          fuer alle, die mit uns anstossen.
-        </p>
+    <>
+      {/* Story Intro: Cyril vs. Meli */}
+      <section id="story" className="section section-light">
+        <div className="container">
+          <h2 className="section-title">Meryl</h2>
+          <p className="section-subtitle">
+            Zwei unterschiedliche Welten, eine grosse Liebe.
+          </p>
 
-        <div className={`row ${styles.row}`}>
-          <div className="col-md-6">
-            <p>
-              Alles begann in <strong>Bern</strong>, an einem ganz normalen
-              Abend, der dann irgendwie doch nicht mehr so normal war. Ein
-              gemeinsamer Apéro mit Freunden, ein spontanes Gespraech ueber
-              Reisen, Meer und gutes Essen – und ploetzlich war da dieses
-              Gefuehl, dass wir uns schon ewig kennen.
-            </p>
-            <p>
-              Seither haben wir viele gemeinsame Abenteuer erlebt: Staedte,
-              Strandferien, Netflix-Marathons, Kaeseplaettchen und jede Menge
-              Lachen. Mallorca ist einer unserer Lieblingsorte geworden – und
-              genau dort moechten wir uns nun das Ja-Wort geben.
-            </p>
-          </div>
-          <div className="col-md-6">
-            <div className={styles.storyCard}>
-              <h3 className={styles.storyTitle}>Highlights</h3>
-              <ul>
-                <li>Erstes Date: irgendwo zwischen Nervositaet und Pizza</li>
-                <li>Erste gemeinsame Reise: spontan, chaotisch, perfekt</li>
-                <li>Home sweet home: unsere gemeinsame Wohnung</li>
-                <li>Der Antrag: ein besonderer Moment nur fuer uns zwei</li>
-              </ul>
+          <div className={`row ${styles.storyGrid}`}>
+            {/* Cyril */}
+            <div className="col-md-6 mb-4">
+              <div className={styles.personCard}>
+                <h3 className={styles.personTitle}>Cyril</h3>
+                <ul className={styles.traitList}>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🎁</span>
+                    <span>Voller Überraschungen</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>😅</span>
+                    <span>Manchmal zu spät</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🚿</span>
+                    <span>Spontan</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🌀</span>
+                    <span>Kreatives Chaos mit Charme</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🤷</span>
+                    <span>Irgendwo reicht auch</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>📖</span>
+                    <span>Regeln lesen</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🧑‍🍳</span>
+                    <span>Rezepttreu</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🔒</span>
+                    <span>Sicherheitsliebend</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🧮</span>
+                    <span>Zahlen & Fakten</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>⏳</span>
+                    <span>Geduldig</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🪜</span>
+                    <span>Schritt für Schritt</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🪟</span>
+                    <span>Fenster auf Kipp</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>👨‍👩‍👧‍👦</span>
+                    <span>Familienmensch</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>💖</span>
+                    <span>Liebevoll</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Meli */}
+            <div className="col-md-6 mb-4">
+              <div className={styles.personCard}>
+                <h3 className={styles.personTitle}>Meli</h3>
+                <ul className={styles.traitList}>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>✨</span>
+                    <span>Lässt sich gerne überraschen</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🕒</span>
+                    <span>Pünktlich</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>📋</span>
+                    <span>Organisiert</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🌸</span>
+                    <span>Ordnungsliebend</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>📦</span>
+                    <span>Alles hat seinen Platz</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🔍</span>
+                    <span>Einfach ausprobieren</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🍳</span>
+                    <span>Nach Gefühl</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🚀</span>
+                    <span>Abenteuerlustig</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🌈</span>
+                    <span>Emotion & Gefühl</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>⚡</span>
+                    <span>Ungeduldig</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>🏃</span>
+                    <span>Direkt los</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>❄️</span>
+                    <span>Ganz oder gar nicht</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>👨‍👩‍👧‍👦</span>
+                    <span>Familienmensch</span>
+                  </li>
+                  <li className={styles.traitItem}>
+                    <span className={styles.emoji}>💖</span>
+                    <span>Liebevoll</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
+
+          {/* Footer */}
+          <div className={styles.storyFooter}>
+            <p className={styles.loveMessage}>
+              <span className={styles.heartEmoji}>❤️</span>
+              Liebe ist stärker als alles andere
+              <span className={styles.heartEmoji}>❤️</span>
+            </p>
+          </div>
+
+          {/* Final Message */}
+          <div className={styles.finalMessage}>
+            <p className={styles.homeMessage}>
+              Unsere Herzen haben ihr Zuhause gefunden
+            </p>
+          </div>
+
+          {/* Divider */}
+          <hr className={styles.divider} />
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

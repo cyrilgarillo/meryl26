@@ -20,7 +20,7 @@ export default function WeddingABC() {
 </p>
 
 <p>
-  Um diesen Abend noch magischer zu machen, bitten wir euch, in Weiss gekleidet zu erscheinen.
+  Um diesen Abend noch magischer zu machen, bitten wir euch, in heller Kleidung zu erscheinen.
 </p>
 
 <p>
@@ -48,11 +48,10 @@ export default function WeddingABC() {
 
           <div className="col-md-4">
             <div className={styles.card}>
-              <h3> hans</h3>
+              <h3>Y wie You</h3>
               <p>
-                Trinkgelder sind auf Mallorca nicht obligatorisch, aber
-                immer willkommen. Ein kleines Trinkgeld für guten Service
-                wird geschätzt.
+              Ohne euch wären diese Tage nicht komplett. Wir freuen uns riesig,
+              diesen besonderen Moment gemeinsam mit euch zu feiern.
               </p>
             </div>
           </div>

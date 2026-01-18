@@ -43,7 +43,7 @@ export const WEDDING_CONFIG = {
   sections: [
     { id: "about", label: "Startseite" },
     { id: "countdown", label: "Countdown" },
-    { id: "story", label: "Unsere Geschichte" },
+    { id: "story", label: "Meryl" },
     { id: "destination", label: "Destination & Ort" },
     { id: "accommodation", label: "Unterkunft & Anreise" },
     { id: "schedule", label: "Ablauf" },

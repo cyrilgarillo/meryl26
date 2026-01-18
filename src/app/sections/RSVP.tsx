@@ -66,6 +66,9 @@ export default function RSVP() {
           Wir freuen uns riesig, diesen besonderen Tag mit euch zu feiern! Bitte lasst uns
           wissen, wie viele Personen kommen und ob ihr spezielle Essenswünsche habt.
         </p>
+        <p className={styles.deadline}>
+          Anmeldung bis spätestens 1. März 2026
+        </p>
 
         {status === "success" && (
           <div className={styles.successMessage} role="status" aria-live="polite">
@@ -172,7 +175,6 @@ export default function RSVP() {
                 <option value="">Keine Einschränkungen</option>
                 <option value="vegetarian">Vegetarisch</option>
                 <option value="vegan">Vegan</option>
-                <option value="gluten-free">Glutenfrei</option>
                 <option value="other">Andere</option>
               </select>
             </div>
@@ -193,12 +195,16 @@ export default function RSVP() {
 
           <div className={styles.radioGroup}>
             <fieldset>
-              <legend className={styles.legend}>Werdet ihr dabei sein?</legend>
               <RadioItem
-                label="Ich bin dabei"
+                label="Ich bin dabei mit Shuttle Service ab Can Pastilla"
                 value="both"
                 name="attendance"
                 required
+              />
+              <RadioItem
+                label="Ich bin dabei und reise mit eigenem Fahrzeug an"
+                value="without-shuttle"
+                name="attendance"
               />
               <RadioItem
                 label="Leider muss ich absagen"

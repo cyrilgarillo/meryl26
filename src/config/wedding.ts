@@ -15,7 +15,7 @@ export const WEDDING_CONFIG = {
 
   // Wedding Date & Location
   weddingDate: new Date("2026-06-06T15:00:00+02:00"),
-  weddingDateISO: "2026-06-06",
+  weddingDateISO: "06-06-2026",
   weddingTime: "15:00",
   location: {
     destination: "Mallorca",

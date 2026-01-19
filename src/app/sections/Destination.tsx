@@ -42,7 +42,7 @@ export default function Destination() {
                     <strong>Adresse:</strong> Cami de sa Serra, Km 1,2, 07260 Porreres, Balearic Islands, Spanien
                   </p>
                   <p>
-                    Die Trauung findet im Landesinneren, in der Nähe von Porreres in der Finca Can Feliu statt. 
+                    Die Trauung findet im Landesinneren, in der Finca Can Feliu in Porreres statt. 
                   </p>
                 </div>
               </div>

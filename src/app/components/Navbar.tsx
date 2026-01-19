@@ -61,7 +61,7 @@ export default function Navbar() {
         </button>
 
         <div className="collapse navbar-collapse" id="weddingNavbar">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             {WEDDING_CONFIG.sections.map((section) => (
               <li className="nav-item" key={section.id}>
                 <a
@@ -73,14 +73,6 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li className="nav-item">
-              <button
-                onClick={handleLogout}
-                className={`nav-link ${styles.navLink} ${styles.logoutBtn}`}
-              >
-                Abmelden
-              </button>
-            </li>
           </ul>
         </div>
       </div>

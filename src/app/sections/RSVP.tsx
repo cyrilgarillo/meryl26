@@ -63,8 +63,9 @@ export default function RSVP() {
       <div className="container">
         <h2 className="section-title">Anmeldung</h2>
         <p className="section-subtitle">
-          Wir freuen uns riesig, diesen besonderen Tag mit euch zu feiern! Bitte lasst uns
-          wissen, wie viele Personen kommen und ob ihr spezielle Essenswünsche habt.
+          Es bedeutet uns viel, diesen besonderen Herzensmoment mit 
+          euch zu teilen. Bitte gebt uns Bescheid, mit wie vielen 
+          Personen ihr kommt und ob ihr spezielle Essenswünsche habt.
         </p>
         <p className={styles.deadline}>
           Anmeldung bis spätestens 1. März 2026

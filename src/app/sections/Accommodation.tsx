@@ -19,19 +19,17 @@ export default function Accommodation() {
                 <p className={styles.highlight}>
                   <strong>Can Pastilla</strong> liegt direkt am Meer, nur ca. 10 Minuten 
                   vom Flughafen entfernt. Ein ruhiger Ort mit vielen Restaurants und Bars, 
-                  ideal für Spaziergänge entlang der Playa de Palma. Wer Party möchte, 
-                  erreicht die bekannten Spots an der Playa de Palma zu Fuss in ca. 30 Minuten.
+                  ideal für Spaziergänge entlang der Playa de Palma oder einer Abkühlung im Meer.
                 </p>
                 <p className={styles.metaRow}>
                   <strong>Fahrzeiten:</strong>
                 </p>
                 <ul className={styles.list}>
-                  <li>Flughafen → Finca ca. 35–40 Minuten mit Auto</li>
-                  <li>Can Pastilla → Finca ca. 35–40 Minuten mit Auto</li>
+                  <li>Flughafen → Finca ca. 35–40 Minuten mit dem Auto</li>
+                  <li>Can Pastilla → Finca ca. 35–40 Minuten mit dem Auto</li>
                 </ul>
                 <p>
-                  Hotel in Porreres ist möglich, oft ist Can Pastilla kostengünstiger 
-                  und zudem direkt am Meer.
+                  Wir haben wundervolle Ferien in Can Pastilla erlebt und können euch diese Gegend von Herzen empfehlen.
                 </p>
               </div>
             </div>
@@ -40,9 +38,9 @@ export default function Accommodation() {
             <div className={styles.callout}>
               <h4 className={styles.calloutTitle}>🚐 Shuttle-Service</h4>
               <p className={styles.calloutText}>
-                Damit ihr den Tag entspannt geniessen könnt und sicher zur Finca sowie später wieder nach Hause kommt, organisieren wir einen Shuttle ab Can Pastilla, hin und zurück.
+                Für eine entspannte und sichere An- und Rückreise organisieren wir einen Shuttle ausschliesslich ab Can Pastilla, der euch direkt zur Finca und später wieder ohne Umwege nach Can Pastilla zurückbringt.
                 <br /><br />
-                Details folgen, sobald alle Anmeldungen eingegangen sind.
+                Genauere Informationen folgen nach Eingang aller Anmeldungen.
               </p>
             </div>
           </div>
@@ -60,9 +58,17 @@ export default function Accommodation() {
                   <li>Flughafen Palma</li>
                   <li>Can Pastilla 10 min vom Flughafen entfernt</li>
                   <li>Can Feliu - Hochzeitslocation</li>
-                   <li>Palma ist mit dem Bus in rund 30 Minuten erreichbar und sehr empfehlenswert.</li>
+                   <li>Von Can Pastilla erreicht ihr Palma mit dem Bus in ca. 30 min</li>
                 </ul>
               </div>
+            </div>
+
+            {/* Alternative Anreise Callout */}
+            <div className={styles.callout}>
+              <h4 className={styles.calloutTitle}>🚗 Alternative Anreise</h4>
+              <p className={styles.calloutText}>
+                Wer lieber individuell anreisen möchte, kann selbstverständlich mit dem Mietwagen oder der Gleichen zur Finca kommen. Es stehen Parkmöglichkeiten direkt vor der Finca zur Verfügung.
+              </p>
             </div>
           </div>
         </div>

@@ -7,20 +7,19 @@ export default function Gifts() {
         <h2 className="section-title">Geschenke</h2>
         <p className="section-subtitle">
           Eure Zeit und eure Reise nach Mallorca sind für uns das grösste Geschenk.
-          Wenn ihr uns darüber hinaus etwas schenken möchtet, freuen wir uns über eine Unterstützung zu unserer nächsten Reise.
-          Australien und Japan stehen ganz oben auf unserer Liste! 
+          Wenn ihr uns darüber hinaus etwas schenken möchtet, freuen wi uns über einen 
+          Beitrag zu unseren Flitterwochen oder gemeinsame Erlebnisse.
         </p>
 
         <div className={styles.card}>
           <h3>Kontoangaben</h3>
           <ul>
-            <li>Melanie hans</li>
-            <li>Gutschein fuer gemeinsame Aktivitäten</li>
-            <li>Etwas Persönliches, das euch mit uns verbindet</li>
+            <li>Name: Melanie Landolf & Cyril Scheurmann</li>
+            <li>Adresse: Bernstrasse 20, 3110 Münsingen</li>
+            <li>IBAN: </li> 
           </ul>
           <p className="mt-2">
-            Kontodaten oder Wunschliste folgen spaeter – wir informieren euch
-            rechtzeitig per Mail oder hier auf der Seite.
+            
           </p>
         </div>
       </div>

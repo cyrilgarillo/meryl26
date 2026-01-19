@@ -3,7 +3,7 @@
 }
 
 .card {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
   background: var(--bg-alt);
   padding: clamp(var(--spacing-md), 4vw, var(--spacing-lg));

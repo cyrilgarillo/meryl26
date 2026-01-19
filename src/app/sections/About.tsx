@@ -27,7 +27,7 @@ export default function Hero() {
                 Jetzt anmelden
               </a>
               <a href="#story" className={styles.secondaryLink}>
-                Unsere Geschichte entdecken ↓
+                Meryl ↓
               </a>
             </div>
           </div>

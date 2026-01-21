@@ -8,7 +8,7 @@ export default function Accommodation() {
         <p className="section-subtitle">
           Hier ein paar Informationen für eure Reise nach Mallorca.
 Wir haben wundervolle Ferien in Can Pastilla erlebt und können euch diese Gegend von Herzen empfehlen.
-Aus diesem Grund startet auch unser Shuttle-Service am Hochzeitstag in Can Pastilla.
+Aus diesem Grund startet auch unser Shuttle-Service am Hochzeitstag ab Can Pastilla.
         </p>
 
         <div className="row g-4">

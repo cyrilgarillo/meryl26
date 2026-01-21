@@ -11,10 +11,10 @@ export default function Story() {
             Zwei unterschiedliche Welten, eine grosse Liebe.
           </p>
 
-          <div className={`row ${styles.storyGrid}`}>
-            {/* Cyril */}
-            <div className="col-6 mb-4 d-flex">
-              <div className={styles.personCard}>
+          <div className={styles.comparisonCard}>
+            <div className={styles.comparisonGrid}>
+              {/* Cyril */}
+              <div className={styles.personSection}>
                 <h3 className={styles.personTitle}>Cyril</h3>
                 <ul className={styles.traitList}>
                   <li className={styles.traitItem}>
@@ -75,11 +75,11 @@ export default function Story() {
                   </li>
                 </ul>
               </div>
-            </div>
 
-            {/* Meli */}
-            <div className="col-6 mb-4 d-flex">
-              <div className={styles.personCard}>
+              <div className={styles.dividerVertical}></div>
+
+              {/* Meli */}
+              <div className={styles.personSection}>
                 <h3 className={styles.personTitle}>Meli</h3>
                 <ul className={styles.traitList}>
                   <li className={styles.traitItem}>

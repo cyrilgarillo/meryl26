@@ -7,7 +7,7 @@ export default function Gifts() {
         <h2 className="section-title">Geschenke</h2>
         <p className="section-subtitle" style={{ fontSize: '1.1rem', fontWeight: '500', maxWidth: '700px', margin: '0 auto 2rem' }}>
           Eure Zeit und eure Reise nach Mallorca sind für uns das grösste Geschenk.
-          Wenn ihr uns darüber hinaus etwas schenken möchtet, freuen wi uns über einen 
+          Wenn ihr uns darüber hinaus etwas schenken möchtet, freuen wir uns über einen 
           Beitrag zu unseren Flitterwochen oder gemeinsame Erlebnisse.
         </p>
 

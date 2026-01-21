@@ -67,7 +67,7 @@ export default function Accommodation() {
             <div className={styles.callout}>
               <h4 className={styles.calloutTitle}>🚗 Alternative Anreise</h4>
               <p className={styles.calloutText}>
-                Wer lieber individuell anreisen möchte, kann selbstverständlich mit dem Mietwagen oder der Gleichen zur Finca kommen. Es stehen Parkmöglichkeiten direkt vor der Finca zur Verfügung.
+                Wer lieber individuell anreisen möchte, kann selbstverständlich mit dem Auto anreisen. Es stehen Parkmöglichkeiten direkt vor der Finca zur Verfügung.
               </p>
             </div>
           </div>

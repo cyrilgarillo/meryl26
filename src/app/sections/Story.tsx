@@ -13,7 +13,7 @@ export default function Story() {
 
           <div className={`row ${styles.storyGrid}`}>
             {/* Cyril */}
-            <div className="col-6 mb-4">
+            <div className="col-6 mb-4 d-flex">
               <div className={styles.personCard}>
                 <h3 className={styles.personTitle}>Cyril</h3>
                 <ul className={styles.traitList}>
@@ -78,7 +78,7 @@ export default function Story() {
             </div>
 
             {/* Meli */}
-            <div className="col-6 mb-4">
+            <div className="col-6 mb-4 d-flex">
               <div className={styles.personCard}>
                 <h3 className={styles.personTitle}>Meli</h3>
                 <ul className={styles.traitList}>

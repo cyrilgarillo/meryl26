@@ -19,7 +19,7 @@
 .personCard {
   background: var(--bg-primary);
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: var(--shadow-lg);
   border: 1px solid rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -29,6 +29,12 @@
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .personCard {
+    padding: 2rem;
+  }
+}
+
 .personCard:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-xl, 0 20px 40px rgba(0, 0, 0, 0.15));
@@ -36,14 +42,22 @@
 
 .personTitle {
   font-family: var(--font-serif);
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-lg);
   font-weight: 500;
   color: var(--text-primary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-align: center;
   border-bottom: 2px solid var(--accent-primary);
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .personTitle {
+    font-size: var(--font-size-2xl);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+  }
 }
 
 /* Trait List */
@@ -57,14 +71,25 @@
 .traitItem {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  margin-bottom: 0.75rem;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
   background: rgba(var(--accent-primary-rgb, 174, 140, 103), 0.05);
   border-radius: var(--radius-md);
   transition: all 0.3s ease;
-  font-size: var(--font-size-lg);
+  font-size: 0.75rem;
   color: var(--text-secondary);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 768px) {
+  .traitItem {
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: var(--font-size-lg);
+  }
 }
 
 .traitItem:hover {
@@ -77,9 +102,15 @@
 }
 
 .emoji {
-  font-size: 2rem;
+  font-size: 1.25rem;
   line-height: 1;
   flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .emoji {
+    font-size: 2rem;
+  }
 }
 
 /* Story Footer */

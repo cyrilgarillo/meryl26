@@ -137,6 +137,7 @@
   color: var(--text-secondary);
   word-wrap: break-word;
   overflow-wrap: break-word;
+  min-height: 2.5rem;
 }
 
 @media (min-width: 768px) {
@@ -145,6 +146,7 @@
     padding: 1rem;
     margin-bottom: 0.75rem;
     font-size: var(--font-size-lg);
+    min-height: 3.5rem;
   }
 }
 

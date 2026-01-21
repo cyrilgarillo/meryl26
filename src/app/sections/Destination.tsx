@@ -9,7 +9,7 @@ export default function Destination() {
       <div className="container">
         <h2 className="section-title">Destination & Ort</h2>
         <p className="section-subtitle">
-          Wir feiern auf Mallorca, Sonne und eine Prise Urlaubsfeeling.
+          Wir feiern auf Mallorca - Sonne und eine Prise Urlaubsfeeling garantiert.
           Hier findet ihr genauere Infos zum Ort.
         </p>
 

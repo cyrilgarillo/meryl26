@@ -6,8 +6,9 @@ export default function Accommodation() {
       <div className="container">
         <h2 className="section-title">Unterkunft &amp; Anreise</h2>
         <p className="section-subtitle">
-          Hier ein paar Tipps für eure Reise nach Mallorca und passende
-          Hotels in der Nähe der Location.
+          Hier ein paar Informationen für eure Reise nach Mallorca.
+Wir haben wundervolle Ferien in Can Pastilla erlebt und können euch diese Gegend von Herzen empfehlen.
+Aus diesem Grund startet auch unser Shuttle-Service am Hochzeitstag in Can Pastilla.
         </p>
 
         <div className="row g-4">
@@ -17,7 +18,7 @@ export default function Accommodation() {
               <h3 className={styles.cardTitle}>Unterkunft & Anreise</h3>
               <div className={styles.cardText}>
                 <p className={styles.highlight}>
-                  <strong>Can Pastilla</strong> liegt direkt am Meer, nur ca. 10 Minuten 
+                  <strong>Can Pastilla</strong> liegt direkt am Meer, nur ca. 10 Auto-Minuten
                   vom Flughafen entfernt. Ein ruhiger Ort mit vielen Restaurants und Bars, 
                   ideal für Spaziergänge entlang der Playa de Palma oder einer Abkühlung im Meer.
                 </p>
@@ -29,7 +30,7 @@ export default function Accommodation() {
                   <li>Can Pastilla → Finca ca. 35–40 Minuten mit dem Auto</li>
                 </ul>
                 <p>
-                  Wir haben wundervolle Ferien in Can Pastilla erlebt und können euch diese Gegend von Herzen empfehlen.
+                 
                 </p>
               </div>
             </div>
@@ -58,7 +59,6 @@ export default function Accommodation() {
                   <li>Flughafen Palma</li>
                   <li>Can Pastilla 10 min vom Flughafen entfernt</li>
                   <li>Can Feliu - Hochzeitslocation</li>
-                   <li>Von Can Pastilla erreicht ihr Palma mit dem Bus in ca. 30 min</li>
                 </ul>
               </div>
             </div>

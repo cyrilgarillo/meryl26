@@ -17,7 +17,7 @@ export default function Hero() {
               Verliebt – Verlobt – Bald verheiratet
             </p>
             <p className={styles.text}>
-              Wir freuen uns riesig, diesen besonderen Tag mit euch unter Sonne,
+              Wir freuen uns riesig, diesen besonderen Tag mit euch - unseren Herzensmenschen unter Sonne,
               Meeresluft und Palmen zu feiern. Hier findet ihr alle Informationen zu
               unserer Hochzeit auf Mallorca, zur Anreise und zur Anmeldung.
             </p>

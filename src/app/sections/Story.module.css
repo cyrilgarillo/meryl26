@@ -29,6 +29,18 @@
   align-items: start;
 }
 
+@media (max-width: 767px) {
+  .comparisonCard {
+    padding: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .comparisonGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .comparisonCard {
     padding: 2.5rem;
@@ -53,11 +65,18 @@
   align-self: stretch;
 }
 
+@media (max-width: 767px) {
+  .dividerVertical {
+    display: none;
+  }
+}
+
 /* Person Section */
 .personSection {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 @keyframes fadeIn {

@@ -14,13 +14,12 @@ export default function Gifts() {
         <div className={styles.card}>
           <h3>Kontoangaben</h3>
           <ul>
-            <li>Name: Melanie Landolf</li>
+            <li>Name: Melanie Landolf & Cyril Scheurmann</li>
             <li>Adresse: Bernstrasse 20, 3110 Münsingen</li>
-            <li>IBAN: CH57 0878 1000 2441 3870 0 </li> 
+            <li>IBAN: CH94 0840 1000 0800 3739 9 </li> 
             <li> Bank:
-              Swissquote Bank SA<br />
-              Chemin de la Crétaux 33 Case postale 319<br />
-              1196 Gland<br />
+              Migros Bank AG<br />
+              Postfach 8010 Zürich<br /> <br />
               SWITZERLAND
             </li> 
           </ul>

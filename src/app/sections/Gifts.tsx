@@ -16,7 +16,7 @@ export default function Gifts() {
           <ul>
             <li>Name: Melanie Landolf & Cyril Scheurmann</li>
             <li>Adresse: Bernstrasse 20, 3110 Münsingen</li>
-            <li>IBAN: CH94 0840 1000 0800 3739 9 </li> 
+            <li>IBAN: CH13 0840 1000 0800 3740 2 </li> 
             <li> Bank:
               Migros Bank AG<br />
               Postfach 8010 Zürich<br /> <br />
